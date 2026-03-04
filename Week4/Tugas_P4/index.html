@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garis Hidup - ITENAS 2026</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="banner">
+        <div class="banner-grid">
+          <img src="assets/gedung_itenas.jpeg" alt="Banner Itenas 1" />
+          <img src="assets/gedung_itenas.jpeg" alt="Banner Itenas 2" />
+          <img src="assets/gedung_itenas.jpeg" alt="Banner Itenas 3" />
+          <img src="assets/gedung_itenas.jpeg" alt="Banner Itenas 4" />
+          <img src="assets/gedung_itenas.jpeg" alt="Banner Itenas 5" />
+          <img src="assets/gedung_itenas.jpeg" alt="Banner Itenas 6" />
+        </div>
+      </header>
+
+      <div class="main-content">
+        <nav class="sidebar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Calculator</a></li>
+            <li><a href="#">Garis Hidup</a></li>
+          </ul>
+        </nav>
+
+        <section class="content-body">
+          <h2>Program Garis Hidup Tanggal Lahir</h2>
+          <p class="description">
+            Program ini merupakan program untuk mendeskripsikan karakter anda
+            berdasarkan tanggal lahir yang kemudian hasilnya akan dikategorikan
+            sebagai Garis Lahir 1 sampai 9.
+          </p>
+          <p class="formula-info">
+            Angka-angka dalam tanggal lahir Anda menyimpan banyak makna.
+            Jumlahkan sampai menjadi satu angka... (Contoh: 25-12-1998 =
+            2+5+1+2+1+9+9+8 = 36 = 3+6 = 9)
+          </p>
+
+          <hr />
+
+          <h3>Ayo Cari Tahu Kepribadian Kamu!</h3>
+          <div class="form-group">
+            <label>Masukkan Tanggal Lahir Anda :</label>
+            <select id="tgl"></select>
+          </div>
+          <div class="form-group">
+            <label>Masukkan Bulan Lahir Anda :</label>
+            <select id="bln">
+              <option value="1">Januari</option>
+              <option value="2">Februari</option>
+              <option value="3">Maret</option>
+              <option value="4">April</option>
+              <option value="5">Mei</option>
+              <option value="6">Juni</option>
+              <option value="7">Juli</option>
+              <option value="8">Agustus</option>
+              <option value="9">September</option>
+              <option value="10">Oktober</option>
+              <option value="11">November</option>
+              <option value="12">Desember</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Masukkan Tahun Lahir Anda :</label>
+            <select id="thn"></select>
+          </div>
+
+          <div class="buttons">
+            <button onclick="hitungGarisHidup()">kirim</button>
+            <button onclick="resetForm()">reset</button>
+          </div>
+
+          <hr />
+
+          <h4>Output</h4>
+          <div class="output-fields">
+            <div class="row">
+              <span>Tanggal</span>: <input type="text" id="outTgl" readonly />
+            </div>
+            <div class="row">
+              <span>Bulan</span>: <input type="text" id="outBln" readonly />
+            </div>
+            <div class="row">
+              <span>Tahun</span>: <input type="text" id="outThn" readonly />
+            </div>
+            <div class="row">
+              <span>Hasil 1</span>: <input type="text" id="outH1" readonly />
+            </div>
+            <div class="row">
+              <span>Hasil 2</span>: <input type="text" id="outH2" readonly />
+            </div>
+            <div class="row">
+              <span>Hasil Akhir</span>:
+              <input type="text" id="outAkhir" readonly />
+            </div>
+          </div>
+
+          <hr />
+
+          <div id="ramalanArea" class="ramalan-box" style="display: none">
+            <h3 id="ramalanJudul"></h3>
+            <p id="ramalanTeks"></p>
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        280224<br />
+        Sistem Informasi | ITENAS 2026
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

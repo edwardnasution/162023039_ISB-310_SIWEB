@@ -1,0 +1,106 @@
+body {
+    background-image: url('assets/Logo_itenas.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #e2a146; /* Kontainer oranye/kuning tetap */
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #333;
+}
+
+.banner {
+    background-color: #fff;
+}
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+/* ensure banner images fit within grid cells */
+.banner-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-img {
+    height: 100px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 1px solid #999;
+}
+
+.main-content {
+    display: flex;
+}
+
+.sidebar {
+    width: 150px;
+    padding: 20px 10px;
+    border-right: 1px solid #8b5a2b;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #8b5a2b;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #4b0082;
+    font-weight: bold;
+}
+
+.content-body {
+    flex: 1;
+    padding: 20px;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 250px;
+}
+
+.output-fields .row {
+    margin: 5px 0;
+}
+
+.output-fields span {
+    display: inline-block;
+    width: 150px;
+}
+
+.ramalan-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #ffa500;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
