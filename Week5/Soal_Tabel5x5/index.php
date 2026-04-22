@@ -26,7 +26,6 @@ td{
     font-weight:bold;
 }
 
-/* warna muncul saat hover */
 .baris1:hover{ background:red; }
 .baris2:hover{ background:yellow; }
 .baris3:hover{ background:green; color:white;}
@@ -34,10 +33,8 @@ td{
 .baris5:hover{ background:brown; color:white;}
 
 </style>
-
 </head>
 <body>
-
 <table>
 <?php
 for($i=1;$i<=5;$i++){
